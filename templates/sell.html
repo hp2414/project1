@@ -1,0 +1,28 @@
+<html>
+	<style>
+		body{ 
+			font-size: 15pt;
+			font-family: arial;
+		}
+	</style>
+
+	<body>
+		<h1>SELL ID: {{id}}</h1>
+		<h2>Total Price: $ {{price}}, Time: {{time}}</h2>
+		<h2>List of Products:</h2>
+		<table border="1">
+			<tr>
+				<th>Product Name</th>
+				<th>Quantity</th>
+			</tr>
+
+			{% for i in range(0, num) %}
+			<tr>
+				<td>{{pname[i]}}</td>
+				<td>{{quantity[i]}}</td>
+			</tr>
+			{% endfor %}
+
+		</table>
+	</body>
+</html>

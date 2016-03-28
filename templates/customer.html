@@ -1,0 +1,40 @@
+
+<html>
+	<style>
+		body{ 
+			font-size: 15pt;
+			font-family: arial;
+		}
+	</style>
+
+
+	<body>
+		<h1>Search page for customers</h1>
+
+		<p><li>Search By Product Name</li></p>
+		<form method="POST" action="/productname">
+			<p>Input product name: <input type="text" name="produ"> <input type="submit" value="GO"></p>
+		</form>
+
+		<p><li>Search By Category</li></p>
+		<form method="POST" action="/category">
+			<p>Input category name : <input type="text" name="categ"> <input type="submit" value="GO"></p>
+		</form>
+
+		<p><li>Search By Promotion</li></p>
+		<form method="POST" action="/promotion">
+			<p>Input promotion name: <input type="text" name="promo"> <input type="submit" value="GO"></p>
+		</form>
+
+		<p><li>Search Promotion By Date</li></p>
+		<form method="POST" action="/datepromotion">
+			<p>Input date: <input type="date" name="date"> <input type="submit" value="GO"></p>
+		</form>
+
+
+
+	</body>
+
+
+</html>
+

@@ -1,0 +1,38 @@
+<html>
+	<style>
+		body{ 
+			font-size: 15pt;
+			font-family: arial;
+		}
+	</style>
+
+	<body>
+		<h1>VIP ID: {{id}}</h1>
+		<h2>credit: {{credit}}</h2>
+		<h2>List of transactions</h2>
+		<table border="1">
+			<tr>
+				<th>Sell ID</th>
+				<th>Total Price</th>
+				<th>Date</th>
+				<th>Employee ID</th>
+			</tr>
+
+			{% for i in range(0, num) %}
+			<tr>
+				<td>{{sellid[i]}}</td>
+				<td>{{totalprice[i]}}</td>
+				<td>{{time[i]}}</td>
+				<td>{{eid[i]}}</td>
+			</tr>
+			{% endfor %}
+
+		</table>
+
+		<h2>Search a transaction</h2>
+		<form method="POST" action="/sell">
+			<p>Input the sell ID</p>
+			<p>ID: <input type="text" name="id"> <input type="submit" value="Search"></p>
+		</form>
+	</body>
+</html>

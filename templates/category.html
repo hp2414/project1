@@ -1,0 +1,29 @@
+<html>
+	<style>
+		body{ 
+			font-size: 15pt;
+			font-family: arial;
+		}
+	</style>
+
+	<body>
+		<h1>Category Details</h1>
+		<h2>Category: {{category}}</h2>
+		<table border="1">
+			<tr>
+				<th>PName</th>
+				<th>Prices</th>
+				<th>AID</th>				
+			</tr>
+
+			{% for i in range(0, num) %}
+			<tr>
+				<td>{{pnames2[i]}}</td>
+				<td>{{prices2[i]}}</td>
+				<td>{{aids2[i]}}</td>
+			</tr>
+			{% endfor %}
+
+		</table>
+	</body>
+</html>
