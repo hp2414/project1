@@ -1,0 +1,37 @@
+<html>
+	<style>
+		body{ 
+			font-size: 15pt;
+			font-family: arial;
+		}
+	</style>
+
+	<body>
+		<h1>Promotion Details</h1>
+		<h2>Search date: {{date}}</h2>
+		<table border="1">
+			<tr>
+				<th>Supplier Name</th>
+				<th>Product Name</th>
+				<th>Original Price</th>	
+				<th>Discount</th>
+				<th>Promotion Name</th>
+				<th>Start time</th>	
+				<th>End time</th>							
+			</tr>
+
+			{% for i in range(0, num) %}
+			<tr>
+				<td>{{snames3[i]}}</td>
+				<td>{{pnames3[i]}}</td>
+				<td>{{prices3[i]}}</td>
+				<td>{{discounts3[i]}}</td>
+				<td>{{promotionnames3[i]}}</td>
+				<td>{{stimes3[i]}}</td>
+				<td>{{etimes3[i]}}</td>				
+			</tr>
+			{% endfor %}
+
+		</table>
+	</body>
+</html>
